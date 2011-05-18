@@ -1,0 +1,32 @@
+/* Main CSS */
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#header {
+  text-align: center;
+}
+
+#left_sidebar {
+  float: left;
+  width: 250px;
+}
+
+#content {
+  width: 980px;
+  min-height: 500px;
+  float: left;
+  text-align: center;
+}
+
+#right_sidebar {
+  float: left;
+  width: 250px;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+}

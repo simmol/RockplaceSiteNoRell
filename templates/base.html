@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" dir="ltr" id="min-width" lang="bg" xml:lang="bg"  >
+  <head>
+    <title>{% block head_title %} RockPlace -  Нашият свят - Portal {% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/main.css"/>
+    <link rel="icon" type="image/png" href="{{ MEDIA_URL }}images/favicon.png"/>
+  </head>
+  <body>
+    <div id="header">
+      {% block header %}
+        <img src="http://i37.servimg.com/u/f37/12/67/93/67/logo_210.jpg"/>
+      {% endblock %}
+    </div>
+
+    <div id="main_content">
+      {% block main_content %}
+
+      {% block left_collumn %}<div id="left_sidebar">&nbsp;</div>{% endblock %}
+
+      {% block middle_collumn %}
+      <div id="content">
+        <h1>{% block title %} RockPlace -  Нашият свят {% endblock %}</h1>
+      </div>
+      {% endblock %}
+
+      {% block right_collumn %}<div id="right_sidebar">&nbsp;</div>{% endblock %}
+
+      {% endblock %}
+    </div>
+
+    <div id="footer">
+      {% block extra_footer %} {% endblock %}
+      {% block footer_menu %}
+        <div id="footer_menu">
+          <a href="http://rockplace.forumotion.net" class="menu_item">FORUM</a>
+          <a href="http://cookbook.dev" class="menu_item">The Cooking site</a>
+      {% endblock %}
+      {% block footer %} {% endblock %}
+    </div>
+  </body>
+</html>
