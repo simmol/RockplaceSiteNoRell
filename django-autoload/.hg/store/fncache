@@ -1,8 +1,0 @@
-data/.hgeol.i
-data/.hgignore.i
-data/LICENSE.i
-data/MANIFEST.in.i
-data/autoload/__init__.py.i
-data/autoload/middleware.py.i
-data/autoload/models.py.i
-data/setup.py.i

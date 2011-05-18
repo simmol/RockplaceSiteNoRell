@@ -88,6 +88,7 @@ SESSION_ENGINE = 'mongoengine.django.sessions'
 # End Mongo-engine conf
 
 MIDDLEWARE_CLASSES = (
+    'autoload.middleware.AutoloadMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -110,8 +111,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'djangotoolbox',
+    'autoload',
+    'dbindexer',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
