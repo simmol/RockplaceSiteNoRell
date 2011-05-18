@@ -17,18 +17,18 @@ ADMINS = (
 MANAGERS = ADMINS
 
 # Connect to mongoDB
-from mongoengine import *
-mongoengine.connect('rockplace')
+#import mongoengine
+#mongoengine.connect('rockplace')
 
 # Don't need this settings couse we use mongoDB
 DATABASES = {
     'default': {
-        'ENGINE': '', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django_mongodb_engine', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'rockplace',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '27017',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
