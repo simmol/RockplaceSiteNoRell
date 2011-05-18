@@ -1,0 +1,4 @@
+== Rockplace website ==
+A small project for our community
+Its gonna be small community driven site
+
